@@ -28,29 +28,40 @@ Upload your files to google drive. We recommend you to make a folder with a name
 
 [Click here](https://colab.research.google.com/github/chrissyhroberts/Diarization-WhisperAI/blob/main/Diarized_Whisper_AI.ipynb) to open the code in a Google Colab window. 
 
+### Buy some computation units
+
+Yes, this costs actual real-world money. You can in theory do this without paying, but you'll be limited to very short clips of audio. 
+* Go to [this page](https://colab.research.google.com/signup/pricing) and buy some credits.
+* Our experience is that you can get about 3 hours of transcript out of 100 compute units, so an estimated £3 per hour.
+
+### Change the runtime to a GPU compute type
 * Click `Runtime`
 * Check that the runtime type is set to `python 3`
 * Change the `Hardware accelerator` to one of the GPU options
- * If you're using the free Colab account, you are limited to using the T4 GPU.
- * If you're using the pro account (paid for) then you can use one of the better options `A100 GPU` or `V100 GPU`. We haven't tested which of the latter two is best.
- * Save 
+ * If you're using the free Colab account, you are limited to using the T4 GPU and don't have much RAM. Not recommended.
+ * If you're using computation units you've paid for, then you can use one of the better options `A100 GPU` or `V100 GPU`. We haven't tested which of the latter two is best.
+ * Press `Save`
+ * You should now be ready to go
+
+## About the code `notebook`
 
 The code is a python `notebook` format. It should looks like this
 
 ![](/img/notebook.png)
 
 Note that you can expand or collapse sections of code using the arrow buttons. 
-You run code either by pressing the play button (when multiple code chunks are collapsed in to a section, see the `Setup` chunk in the image above) or by hovering over and then clicking on the [ ] marks at the start of individual code chunks (see the grey box in the image above)
+You run code either by pressing the play button (when multiple code chunks are collapsed in to a section, see the `Setup` chunk in the image above) or by hovering over and then clicking on the [ ] marks at the start of individual code chunks (see the grey box in the image above)
 
-## Setup <a id="setup"></a>
+## Getting ready <a id="getting_ready"></a>
 
+### Run the setup chunks
 Run all the chunks of code in the setup section. This takes 4-5 minutes as the script prepares the system for the analysis by installing all of the software libraries and packages needed for the run. 
 
 ## Specify details of run  <a id="run_details"></a>
 
 This section needs to be edited by you. On the right you can see text boxes where you enter information about the run. 
 The notebook will automatically make the appropriate changes to the code based on what you enter here. 
-When you have modified this section, collapse the three `Specify details of run` section and run the code by pressing the play button
+When you have modified this section, collapse the `Specify details of run` section and run the code by pressing the play button
 
 ### video_path
 Enter the full path to the source audio or video file
@@ -64,6 +75,8 @@ This is where you want to save all your outputs. The system creates a lot of fil
 The google drive path must start `/content/drive/MyDrive/`
 A sensible approach would be to use a subfolder named after the input file. For instance, `/content/drive/MyDrive/whisper/audio_001`
 If the subfolder doesn't exist, the system will automatically create it. 
+
+![](/img/run_parameters.png)
 
 ### audio_title
 This is simply the name of the document. This will be shown at the top of the html output.
@@ -81,7 +94,7 @@ This should be set to either transcribe or translate the audio stream.
 ### model_size
 For English audio, you can usually get away with using the `small` model. For other languages, you should usually opt for the `large` model
 
-![](/img/run_parameters.png)
+
 
 ## Specify speakers  <a id="speakers"></a>
 This section is modifiable, but usually you should leave it alone. 
