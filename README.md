@@ -70,7 +70,7 @@ You could use a descriptive title, such as `Audio_001 : Interview with Dr Ranj f
 
 ### access_token
 Paste your huggingface access token here. See [here](#terms_and_conditions)
-
+terms_and_conditions
 
 ![](/img/run_parameters.png)
 
