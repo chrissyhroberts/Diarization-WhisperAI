@@ -94,8 +94,6 @@ This should be set to either transcribe or translate the audio stream.
 ### model_size
 For English audio, you can usually get away with using the `small` model. For other languages, you should usually opt for the `large` model
 
-
-
 ## Specify speakers  <a id="speakers"></a>
 This section is modifiable, but usually you should leave it alone. 
 You can name speakers directly, and change the colours used in the html output. 
@@ -113,3 +111,10 @@ This section should be left alone. Collapse it and run it by pressing play.
 
 # Outputs
 The scripts will put all of the outputs on to your Google Drive in a subfolder named according to how you defined the `output_path` variable.
+
+The most important files you will get are 
+
+00_[filename]_transcript.txt
+00_[filename]_transcript.html
+
+
