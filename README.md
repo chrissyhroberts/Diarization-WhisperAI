@@ -50,6 +50,7 @@ Run all the chunks of code in the setup section. This takes 4-5 minutes as the s
 
 This section needs to be edited by you. On the right you can see text boxes where you enter information about the run. 
 The notebook will automatically make the appropriate changes to the code based on what you enter here. 
+When you have modified this section, collapse the three `Specify details of run` section and run the code by pressing the play button
 
 ### video_path
 Enter the full path to the source audio or video file
@@ -70,8 +71,32 @@ You could use a descriptive title, such as `Audio_001 : Interview with Dr Ranj f
 
 ### access_token
 Paste your huggingface access token here. See [here](#terms_and_conditions)
-terms_and_conditions
+
+### language
+Whisper can transcribe and translate (only to English) a large number of languages. Select the language of your audio/video file here. 
+
+### whisper_task
+This should be set to either transcribe or translate the audio stream. 
+
+### model_size
+For English audio, you can usually get away with using the `small` model. For other languages, you should usually opt for the `large` model
 
 ![](/img/run_parameters.png)
 
+## Specify speakers  <a id="speakers"></a>
+This section is modifiable, but usually you should leave it alone. 
+You can name speakers directly, and change the colours used in the html output. 
 
+## Prepare data and folders  <a id="prep_data_and_folders"></a>
+This section creates all the necessary folders and files to do the run
+This code should be left alone. Collapse it and run it by pressing play.
+
+## Diarization using Pyannote  <a id="diarization"></a>
+This section diarizes the audio stream, figuring out how many speakers there are, and when they are speaking
+This code should be left alone. Collapse it and run it by pressing play.
+
+## Prepare data and folders  <a id="prep_data_and_folders"></a>
+This section should be left alone. Collapse it and run it by pressing play.
+
+# Outputs
+The scripts will put all of the outputs on to your Google Drive in a subfolder named according to how you defined the `output_path` variable.
