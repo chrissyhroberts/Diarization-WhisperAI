@@ -18,3 +18,8 @@ Pyannote is an AI tool which diarizes the audio and video streams whilst also se
     * It will look something like this `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`
   * Keep this safe, you'll need it later 
 
+## Open the code in Google Colab
+
+You'll need to be signed in to a google account for this to work
+
+[Click here](https://colab.research.google.com/github/chrissyhroberts/Diarization-WhisperAI/blob/main/Diarized_Whisper_AI.ipynb)
