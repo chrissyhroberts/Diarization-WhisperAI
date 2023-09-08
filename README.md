@@ -4,7 +4,7 @@
 
 You'll need to be signed in to a google account for this to work
 
-## Accept terms and conditions for using Pyannote
+## Accept terms and conditions for using Pyannote  <a id="terms_and_conditions"></a>
 
 Pyannote is an AI tool which diarizes the audio and video streams whilst also segmenting the audio in to discrete chunks according to speaker. The code authors have made this software open source, but have some terms and conditions which you need to agree to in order to use the code. It will not be possible to use these scripts without following these processes, so please don't skip these actions
 
@@ -42,11 +42,11 @@ The code is a python `notebook` format. It should looks like this
 Note that you can expand or collapse sections of code using the arrow buttons. 
 You run code either by pressing the play button (when multiple code chunks are collapsed in to a section, see the `Setup` chunk in the image above) or by hovering over and then clicking on the [ ] marks at the start of individual code chunks (see the grey box in the image above)
 
-## Setup
+## Setup <a id="setup"></a>
 
 Run all the chunks of code in the setup section. This takes 4-5 minutes as the script prepares the system for the analysis by installing all of the software libraries and packages needed for the run. 
 
-## Specify details of run
+## Specify details of run  <a id="run_details"></a>
 
 This section needs to be edited by you. On the right you can see text boxes where you enter information about the run. 
 The notebook will automatically make the appropriate changes to the code based on what you enter here. 
@@ -69,7 +69,7 @@ This is simply the name of the document. This will be shown at the top of the ht
 You could use a descriptive title, such as `Audio_001 : Interview with Dr Ranj from Ugandan MoH 2023-08-01`
 
 ### access_token
-Paste your huggingface access token here. See [here](## Accept terms and conditions for using Pyannote)
+Paste your huggingface access token here. See [here](#terms_and_conditions)
 
 
 ![](/img/run_parameters.png)
