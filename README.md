@@ -22,4 +22,15 @@ Pyannote is an AI tool which diarizes the audio and video streams whilst also se
 
 You'll need to be signed in to a google account for this to work
 
-[Click here](https://colab.research.google.com/github/chrissyhroberts/Diarization-WhisperAI/blob/main/Diarized_Whisper_AI.ipynb)
+[Click here](https://colab.research.google.com/github/chrissyhroberts/Diarization-WhisperAI/blob/main/Diarized_Whisper_AI.ipynb) to open the code in a Google Colab window. 
+
+* Click `Runtime`
+* Check that the runtime type is set to `python 3`
+* Change the `Hardware accelerator` to one of the GPU options
+ * If you're using the free Colab account, you are limited to using the T4 GPU.
+ * If you're using the pro account (paid for) then you can use one of the better options `A100 GPU` or `V100 GPU`. We haven't tested which of the latter two is best.
+ * Save 
+
+
+
+
